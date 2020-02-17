@@ -40,6 +40,27 @@ class Inventory extends React.Component {
     this.setState({ [name]: value });
   };
 
+    // manages the alerts sent by the banner
+    bannerClick = (data, type) => {
+      if (data == "search") {
+        alert("This icon would allow users to search for a specific item in this collection.");
+      } else if (data == "pause") {
+        alert("This icon would allow users to pause the flow of data from the backend, stopping the asynchronous data flow.");
+      } else if (data == "database") {
+        alert("This icon would allow users to check diagnostics from the database.");
+      } else if (data == "bookmark") {
+        alert("This icon would allow users to bookmark this collection for later use.");
+      } else if (data == "print") {
+        alert("This icon would allow users to print out the results of a collection of documents.");
+      } else if (data == "bell") {
+        alert("This icon would allow users to turn on notifications for a specific collection.");
+      } else if (data == "download") {
+        alert("This icon would allow users to download the current collection as a PDF.");
+      } else if (data == "sort") {
+        alert("This icon would allow users to sort the collection by number or letter.");
+      }
+    };
+
   submit = (event) => {
     event.preventDefault();
 
@@ -313,12 +334,14 @@ class Inventory extends React.Component {
 
 
       <div className="dummy-links">
-        <i className="fa fa-download icons"></i>
-        <i className="fa fa-bell icons"></i>
-        <i className="fa fa-print icons"></i>
-        <i className="fa fa-bookmark icons"></i>
-        <i className="fa fa-database icons"></i>
-        <i className="fa fa-pause icons"></i>
+      <i className="fa fa-download icons" onClick={this.bannerClick.bind(this, "download")}></i>
+        <i className="fa fa-bell icons" onClick={this.bannerClick.bind(this, "bell")}></i>
+        <i className="fa fa-print icons" onClick={this.bannerClick.bind(this, "print")}></i>
+        <i className="fa fa-bookmark icons" onClick={this.bannerClick.bind(this, "bookmark")}></i>
+        <i className="fa fa-database icons" onClick={this.bannerClick.bind(this, "database")}></i>
+        <i className="fa fa-pause icons" onClick={this.bannerClick.bind(this,"pause")}></i>
+        <i className="fa fa-search icons" onClick={this.bannerClick.bind(this, "search")}></i>
+        <i className="fa fa-sort icons" onClick={this.bannerClick.bind(this, "sort")}></i>
         <i className="fa fa-plus icons" type="button" onClick={this.toggleModal}></i>
       </div>  
       <div className="main-container">

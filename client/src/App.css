@@ -53,6 +53,11 @@ h1 {
     font-size: 3em;
 }
 
+.welcomeh1 {
+    color: white;
+    margin-left: 15%;
+}
+
 h4 {
     padding-top: 15px;
     font-size: x-large;
@@ -102,7 +107,7 @@ nav {
 }
 
 .navbar-brand:hover {
-    color: #5c8fd1;
+    color: #46E2E7;
 }
 
 .link {
@@ -137,12 +142,47 @@ ul, li {
 }
 
 .home-backgroud {
-    display:table;
-    width:100%;
+    padding-top: 14%;
+    width: 100%;
     height: calc(100vh - 60px);
     background-size: cover;
     background-image: url("warehouse.jpg");
-    opacity: .6;
+} 
+
+.darken {
+    background-image: 
+        linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("warehouse.jpg");
+} 
+
+.homeP {
+    color: white;
+    font-size: large;
+    text-align: right;
+    margin-right: 10%;
+}
+
+.buttonArea {
+    margin-left: 17%;
+    margin-top: 5%;
+}
+
+.homeButton {
+    font-family: "Helvetica Neue";
+    font-weight: 700;
+    border-radius: 3px;
+    width: 150px;
+    height: 55px;
+    color: white;
+    background-color: #0ab9bf;
+    border: none;
+}
+
+.homeButton:hover {
+    background-color: #17d0d5;
 }
 
 span
