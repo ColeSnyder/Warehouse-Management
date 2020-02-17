@@ -1,0 +1,201 @@
+/* Copyright Cole Snyder 2020 */
+@import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.add {
+    border: 3px solid black;
+    background-color: #f0f0f0;
+    color: black;
+    border-radius: 3px;
+}
+
+.update {
+    border: 3px solid black;
+    background-color: #f0f0f0;
+    color: black;
+    border-radius: 3px;
+}
+
+.add-body {
+    padding: 15px;
+}
+
+.idClick:hover {
+    cursor: pointer;
+}
+
+.main-container {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    border: 3px solid black;
+    margin-right: .5%;
+    margin-left: .5%;
+    margin-top: 1%;
+    margin-bottom: 125px;
+    padding-bottom: 50px;
+}
+
+.banner {
+    background-color: black;
+    color: white;
+    height: 60px;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h4 {
+    padding-top: 15px;
+    font-size: x-large;
+    text-align: center;
+}
+
+p {
+    font-size: smaller;
+}
+
+.delete-item {
+    font-size: x-small;
+    float: right;
+}
+
+.delete-item:hover {
+    cursor: pointer;
+    color: red;
+}
+
+input {
+    width: 100%;
+}
+
+nav {
+    background-color: black;
+    height: 70px;
+    color: #FFFFFF;
+    padding-top: 3%;
+    width: 100%;
+    margin: 0;
+    margin-right: 0;
+}
+
+.nav-title {
+    font-size: xx-large;
+}
+
+.nav-links {
+    color: white;
+    float: right;
+}
+
+.navbar-brand {
+    color: white;
+    height: 100%;
+}
+
+.navbar-brand:hover {
+    color: #5c8fd1;
+}
+
+.link {
+    margin-top: 15px;
+    font-size: smaller;
+}
+
+.db-item {
+    border: 1px solid black;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #f2f4fa;
+    border-radius: 2px;
+}
+
+.item-comp {
+    color: #5c8fd1;
+}
+
+.item-comp:hover {
+     background-color: #e3eaff;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+ul, li {
+    margin: 0;
+    padding: .5px;
+}
+
+.home-backgroud {
+    display:table;
+    width:100%;
+    height: calc(100vh - 60px);
+    background-size: cover;
+    background-image: url("warehouse.jpg");
+    opacity: .6;
+}
+
+span
+{
+    display:table-row;
+    height: 100%;
+}
+
+strong {
+    color: #0d2c52;
+}
+
+.dummy-links {
+    height: 30px;
+    width: 100%;
+    background-color: #e3eaff;
+    padding-right: 5%;
+    padding-top: 5px;
+}
+
+.icons {
+    float: right;
+    margin-left: 25px;
+}
+
+.icons:hover {
+    cursor: pointer;
+    color: slategray;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-main {
+    position:fixed;
+    background: white;
+    width: 80%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
