@@ -17,7 +17,7 @@ const routes = require('./routes/api');
 
 // the following line contains the URI for the database connection. In a real world, live applicaiton 
 // I would obscure these credentials for good practice. 
-// const MONGODB_URI = 'mongodb+srv://ColeSnyder:Diabetic123@bincluster-y3cn9.mongodb.net/test?retryWrites=true&w=majority';
+const MONGODB_URI = 'mongodb+srv://ColeSnyder:Diabetic123@bincluster-y3cn9.mongodb.net/test?retryWrites=true&w=majority';
 
 // 2
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/scout', {
