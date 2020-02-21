@@ -46,3 +46,11 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.listen(PORT, console.log(`Server is starting at ${PORT}`));
+
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build/index.html'), function(err) {
+      if (err) {
+        res.status(500).send(err)
+      }
+    })
+  })
