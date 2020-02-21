@@ -72,7 +72,7 @@ class OrderLine extends React.Component {
     };
 
     axios({
-      url: 'http://localhost:3000/api/saveOrderLines',
+      url: 'https://mernwarehouse.herokuapp.com/api/saveOrderLines',
       method: 'POST',
       data: payload
     })
@@ -92,7 +92,7 @@ class OrderLine extends React.Component {
     console.log('Data before sending to server: ', data._id);
 
     axios({
-      url: 'http://localhost:3000/api/deleteOrderLines/' + data._id,
+      url: 'https://mernwarehouse.herokuapp.com/api/deleteOrderLines/' + data._id,
       method: 'POST',
       data: data._id
     })
@@ -117,7 +117,7 @@ class OrderLine extends React.Component {
     };
 
     axios({
-      url: 'http://localhost:3000/api/updateOrderLines/' + data._id + '/' + data.OrderLineID + '/' + data.OrderID + '/' + data.ProductID + '/' + data.QTY,
+      url: 'https://mernwarehouse.herokuapp.com/api/updateOrderLines/' + data._id + '/' + data.OrderLineID + '/' + data.OrderID + '/' + data.ProductID + '/' + data.QTY,
       method: 'POST',
       data: payload
     })

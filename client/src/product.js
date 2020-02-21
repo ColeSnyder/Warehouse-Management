@@ -70,7 +70,7 @@ class Products extends React.Component {
     };
 
     axios({
-      url: 'http://localhost:3000/api/saveProduct',
+      url: 'https://mernwarehouse.herokuapp.com/api/saveProduct',
       method: 'POST',
       data: payload
     })
@@ -90,7 +90,7 @@ class Products extends React.Component {
     console.log('Data before sending to server: ', data._id);
 
     axios({
-      url: 'http://localhost:3000/api/deleteProduct/' + data._id,
+      url: 'https://mernwarehouse.herokuapp.com/api/deleteProduct/' + data._id,
       method: 'POST',
       data: data._id
     })
@@ -114,7 +114,7 @@ class Products extends React.Component {
     };
 
     axios({
-      url: 'http://localhost:3000/api/updateProduct/' + data._id + '/' + data.ProductID + '/' + data.SKU + '/' + data.ProductDescription,
+      url: 'https://mernwarehouse.herokuapp.com/api/updateProduct/' + data._id + '/' + data.ProductID + '/' + data.SKU + '/' + data.ProductDescription,
       method: 'POST',
       data: payload
     })

@@ -72,7 +72,7 @@ class Inventory extends React.Component {
     };
 
     axios({
-      url: 'http://localhost:3000/api/saveInventory',
+      url: 'https://mernwarehouse.herokuapp.com/api/saveInventory',
       method: 'POST',
       data: payload
     })
@@ -92,7 +92,7 @@ class Inventory extends React.Component {
     console.log('Data before sending to server: ', data._id);
 
     axios({
-      url: 'http://localhost:3000/api/deleteInventory/' + data._id ,
+      url: 'https://mernwarehouse.herokuapp.com/api/deleteInventory/' + data._id ,
       method: 'POST',
       data: data._id
     })
@@ -117,7 +117,7 @@ class Inventory extends React.Component {
     };
 
     axios({
-      url: 'http://localhost:3000/api/updateInventory/' + data._id + '/' + data.InventoryID + '/' + data.ProductID + '/' + data.BinID + '/' + data.QTY,
+      url: 'https://mernwarehouse.herokuapp.com/api/updateInventory/' + data._id + '/' + data.InventoryID + '/' + data.ProductID + '/' + data.BinID + '/' + data.QTY,
       method: 'POST',
       data: payload
     })

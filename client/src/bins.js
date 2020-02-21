@@ -94,7 +94,7 @@ class Bins extends React.Component {
     console.log('Data before sending to server: ', data._id);
 
     axios({
-      url: 'http://localhost:3000/api/deleteBin/' + data._id ,
+      url: 'https://mernwarehouse.herokuapp.com/api/deleteBin/' + data._id ,
       method: 'POST',
       data: data._id
     })
@@ -118,7 +118,7 @@ class Bins extends React.Component {
     };
 
     axios({
-      url: 'http://localhost:3000/api/updateBin/' + data._id + '/' + data.BinID + '/' + data.BinName,
+      url: 'https://mernwarehouse.herokuapp.com/api/updateBin/' + data._id + '/' + data.BinID + '/' + data.BinName,
       method: 'POST',
       data: payload
     })

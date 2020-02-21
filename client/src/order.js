@@ -75,7 +75,7 @@ class Order extends React.Component {
     };
 
     axios({
-      url: 'http://localhost:3000/api/saveOrder',
+      url: 'https://mernwarehouse.herokuapp.com/api/saveOrder',
       method: 'POST',
       data: payload
     })
@@ -95,7 +95,7 @@ class Order extends React.Component {
     console.log('Data before sending to server: ', data._id);
 
     axios({
-      url: 'http://localhost:3000/api/deleteOrder/' + data._id,
+      url: 'https://mernwarehouse.herokuapp.com/api/deleteOrder/' + data._id,
       method: 'POST',
       data: data._id
     })
@@ -121,7 +121,7 @@ class Order extends React.Component {
     };
 
     axios({
-      url: 'http://localhost:3000/api/updateOrder/' + data._id + '/' + data.OrderID + '/' + data.OrderNumber + '/' + data.DateOrdered + '/' + data.CustomerName + '/' + data.CustomerAddress,
+      url: 'https://mernwarehouse.herokuapp.com/api/updateOrder/' + data._id + '/' + data.OrderID + '/' + data.OrderNumber + '/' + data.DateOrdered + '/' + data.CustomerName + '/' + data.CustomerAddress,
       method: 'POST',
       data: payload
     })
