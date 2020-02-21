@@ -84,6 +84,9 @@ class Inventory extends React.Component {
       .catch(() => {
         console.log('Internal server error');
       });
+      this.setState({
+        modalIsOpen: ! this.state.modalIsOpen
+      });
   };
 
   delete = (data, event) => {
@@ -103,9 +106,6 @@ class Inventory extends React.Component {
         console.log('Internal server error');
       });
       this.getInventory();
-      this.setState({
-        modalIsOpen: ! this.state.modalIsOpen
-      });
   };
 
   update = (data, event) => {

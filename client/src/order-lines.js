@@ -84,6 +84,9 @@ class OrderLine extends React.Component {
       .catch(() => {
         console.log('Internal server error');
       });
+      this.setState({
+        modalIsOpen: ! this.state.modalIsOpen
+      });
   };
 
   delete = (data, event) => {
@@ -103,9 +106,6 @@ class OrderLine extends React.Component {
         console.log('Internal server error');
       });
       this.getOrderLines();
-      this.setState({
-        modalIsOpen: ! this.state.modalIsOpen
-      });
   };
 
   update = (data, event) => {
