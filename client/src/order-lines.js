@@ -103,6 +103,9 @@ class OrderLine extends React.Component {
         console.log('Internal server error');
       });
       this.getOrderLines();
+      this.setState({
+        modalIsOpen: ! this.state.modalIsOpen
+      });
   };
 
   update = (data, event) => {

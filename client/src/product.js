@@ -82,6 +82,10 @@ class Products extends React.Component {
       .catch(() => {
         console.log('Internal server error');
       });
+      this.getProducts();
+      this.setState({
+        modalIsOpen: ! this.state.modalIsOpen
+      });
   };
 
   delete = (data, event) => {

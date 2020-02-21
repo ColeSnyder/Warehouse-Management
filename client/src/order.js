@@ -87,6 +87,10 @@ class Order extends React.Component {
       .catch(() => {
         console.log('Internal server error');
       });
+      this.getOrders();
+      this.setState({
+        modalIsOpen: ! this.state.modalIsOpen
+      });
   };
 
   delete = (data, event) => {

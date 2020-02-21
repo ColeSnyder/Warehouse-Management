@@ -103,6 +103,9 @@ class Inventory extends React.Component {
         console.log('Internal server error');
       });
       this.getInventory();
+      this.setState({
+        modalIsOpen: ! this.state.modalIsOpen
+      });
   };
 
   update = (data, event) => {
@@ -199,7 +202,7 @@ class Inventory extends React.Component {
       InventoryID: data.InventoryID,
       ProductID: data.ProductID,
       BinID: data.BinID,
-      QTY: data.BinID,
+      QTY: data.QTY,
       _id: data._id
     });
 
