@@ -273,4 +273,8 @@ router.post('/updateOrderLines/:id/:OrderLineID/:OrderID/:ProductID/:QTY', (req,
 
 });
 
+router.get('*', (request, response) => {
+    response.sendFile(path.resolve(__dirname, 'index.html'))
+});
+
 module.exports = router;
