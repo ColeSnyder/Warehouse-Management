@@ -70,7 +70,7 @@ class Bins extends React.Component {
     };
 
     axios({
-      url: 'http://localhost:3000/api/saveBin',
+      url: 'https://mernwarehouse.herokuapp.com/api/saveBin',
       method: 'POST',
       data: payload
     })
